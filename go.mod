@@ -1,4 +1,4 @@
-module github.com/onedayherocoming/common
+module github.com/onedayherocoming/mycommon
 
 go 1.16
 
