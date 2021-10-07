@@ -1,6 +1,7 @@
 package common
 
 import (
+	"fmt"
 	"github.com/asim/go-micro/v3/util/log"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"net/http"
@@ -17,5 +18,6 @@ func PrometheusBoot(port int){
 			log.Fatal("启动失败")
 		}
 		log.Info("监控启动，端口为："+strconv.Itoa(port))
+		fmt.Println("监控启动，端口为："+strconv.Itoa(port))
 	}()
 }
