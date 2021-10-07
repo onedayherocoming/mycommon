@@ -8,7 +8,7 @@ import (
 )
 
 func PrometheusBoot(port int){
-	http.Handle("metrices",promhttp.Handler())
+	http.Handle("metrics",promhttp.Handler())
 	//启动web服务
 	go func(){
 		err := http.ListenAndServe("0.0.0.0:"+strconv.Itoa(port),nil)
